@@ -23,6 +23,10 @@ app.use('/auth', require('./routes/auth'));
 app.use('/refresh', require('./routes/refresh'));
 app.use('/logout', require('./routes/logout'));
 app.use('/findTheWord', require('./routes/findTheWord'));
+app.use('/flashbox', require('./routes/flashBox'));
+app.use('/flashmemory', require('./routes/flashMemory'));
+app.use('/locationMemory', require('./routes/locationMemory'));
+app.use('/memorynum', require('./routes/numberMemory'));
 app.use(verifyJWT);
 app.use('/users', require('./routes/users'));
 app.all('*', (req, res) => {
